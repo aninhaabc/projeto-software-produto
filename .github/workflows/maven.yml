@@ -50,4 +50,4 @@ jobs:
         script: |
           docker stop produto
           docker rm --force produto
-          docker run -d -p 8080:8082 --name produto --network=rede aaninhabc/produto-ci:${{ github.sha }}
+          docker run -d -p 8082:8082 --name produto --network=rede aaninhabc/produto-ci:${{ github.sha }}
