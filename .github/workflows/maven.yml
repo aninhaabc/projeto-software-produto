@@ -49,7 +49,7 @@ jobs:
           script: |
             docker stop produto
             docker rm --force produto
-            docker run -d -p 8080:8080 \
+            docker run -d -p 8082:8082 \
               -e USER_DB=${{ secrets.USER_DB }} \
               -e PASS_DB=${{ secrets.PASS_DB }} \
               -e PATH_DB=${{ secrets.PATH_DB }} \
